@@ -2,9 +2,9 @@ import cv2
 from matplotlib import pyplot as plt
 import numpy as np
 
-original_image = cv2.imread("C:/Semester4/digital_image_processing/digital_image_processing_project/images/original_image.jpg")
+original_image = cv2.imread("C:/Semester4/digital_image_processing/dip_project/images/original_image.jpg")
 
-marked_image = cv2.imread("C:/Semester4/digital_image_processing/digital_image_processing_project/images/marked_image.jpg",0)
+marked_image = cv2.imread("C:/Semester4/digital_image_processing/dip_project/images/marked_image.jpg",0)
 plt.imshow(marked_image, cmap='gray')
 plt.title('Marked Image')
 plt.show()

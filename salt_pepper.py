@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-original_image = cv2.imread("C:/Semester4/digital_image_processing/digital_image_processing_project/images/original_image.jpg")
+original_image = cv2.imread("C:/Semester4/digital_image_processing/dip_project/images/original_image.jpg")
 def add_salt_and_pepper_noise(image, salt_prob, pepper_prob):
     noisy_image = np.copy(image)
     total_pixels = image.size
