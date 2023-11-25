@@ -35,3 +35,19 @@ Follow these steps to set up and run the Digital Image Restoration Project on yo
    ```bash
    cd digital_image_processing_project 
    ```
+
+3. Create a virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv 
+   ```
+
+4. Activate the virtual environment:
+- For Windows
+  ```bash
+   .\venv\Scripts\activate 
+   ```
+- For Mac
+   ```bash
+   source venv/bin/activate 
+   ```
+
