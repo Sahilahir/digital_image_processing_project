@@ -64,3 +64,14 @@ Follow these steps to set up and run the Digital Image Restoration Project on yo
    ```
 
 
+
+# Usage
+
+## 1. Salt-and-Pepper Noise Addition and Restoration
+
+Run the following script to simulate the effects of aging by adding salt-and-pepper noise to the original image and then restoring it:
+
+   ```bash
+   python salt_pepper.py
+   ```
+See The Results in the images folder. 
