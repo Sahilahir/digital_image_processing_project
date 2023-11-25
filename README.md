@@ -18,10 +18,17 @@ Explore this project to witness the transformation of a historic image through t
 
 Follow these steps to set up and run the Digital Image Restoration Project on your local machine.
 
+## Prerequisites
 - Python (version 3.10 or later)
 - OpenCV library (install using `pip install opencv-python`)
 - Matplotlib library (install using `pip install matplotlib`)
 - NumPy library (install using `pip install numpy`)
+
+## Installation
+ 
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/Sahilahir/digital_image_processing_project.git
 
 
 
