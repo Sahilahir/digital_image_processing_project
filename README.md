@@ -31,4 +31,7 @@ Follow these steps to set up and run the Digital Image Restoration Project on yo
    git clone https://github.com/Sahilahir/digital_image_processing_project.git
    ```
 
-2. 
+2. Navigate to the project directory:
+   ```bash
+   cd digital_image_processing_project 
+   ```
