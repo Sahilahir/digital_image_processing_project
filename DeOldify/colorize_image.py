@@ -6,7 +6,7 @@ from deoldify.visualize import *
 torch.backends.cudnn.benchmark = True
 
 # Specify the path to your black and white restored image
-input_path = Path("C:/Semester4/digital_image_processing/dip_project/images/Restored_shivaji.jpg")
+input_path = Path("C:/Semester4/digital_image_processing/dip_project/images/Restored_denoised_image.jpg")
 
 # Colorize the image and store the result in a results folder
 colorizer = get_image_colorizer(artistic=True)
