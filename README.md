@@ -51,3 +51,16 @@ Follow these steps to set up and run the Digital Image Restoration Project on yo
    source venv/bin/activate 
    ```
 
+5. Install the project dependencies:
+
+   ```bash
+   pip install opencv-python 
+   ```
+   ```bash
+   pip install matplotlib 
+   ```
+   ```bash
+   pip install numpy 
+   ```
+
+
