@@ -75,3 +75,21 @@ Run the following script to simulate the effects of aging by adding salt-and-pep
    python salt_pepper.py
    ```
 See The Results in the images folder. 
+
+This script utilizes OpenCV and Matplotlib to visualize the original image, the image with added noise, and the final restored image. Adjust the noise probability and filter size in the script as needed.
+
+You can also see the process in the salt_pepper.ipynb file to understand the process.
+
+
+## 2. Inpainting for artifact removal in the image
+
+Before running this script you first need to mark the artifact area or damaged area or area thay you think are missing pixel values then mark those areas using paint or any other tools and make them white use paint and brush those region with white colour and save the image as marked_image.jpg in the images folder. then run the following script: 
+
+   ```bash
+   python artifact_removal.py
+   ```
+See the restored noise removed image in the images folder (Restored_denoiosed_image.jpg).
+
+This script uses advanced techniques such as thresholding, dilation, and Inpainting. It creates a binary mask, expands the mask boundaries, and finally applies inpainting to restore the marked regions. 
+
+
