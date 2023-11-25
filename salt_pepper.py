@@ -1,8 +1,14 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+
+# Load the original image
 original_image = cv2.imread("C:/Semester4/digital_image_processing/dip_project/images/original_image.jpg")
+
+#Add salt-and-pepper noise to the image
 def add_salt_and_pepper_noise(image, salt_prob, pepper_prob):
+
+    # Create a copy of the image to avoid modifying the original
     noisy_image = np.copy(image)
     total_pixels = image.size
 
@@ -18,16 +24,17 @@ def add_salt_and_pepper_noise(image, salt_prob, pepper_prob):
 
     return noisy_image
 
+#Restore the image using a median filter
 def restore_image(image, filter_size):
     restored_image = cv2.medianBlur(image, filter_size)
     return restored_image
 
-# Add salt and pepper noise
+# Add salt-and-pepper noise to the original image
 salt_prob = 0.01 
 pepper_prob = 0.01 
 noisy_image = add_salt_and_pepper_noise(original_image, salt_prob, pepper_prob)
 
-# Restore the image using median filter
+# Restore the noisy image using a median filter
 filter_size = 3 
 restored_image = restore_image(noisy_image, filter_size)
 
@@ -48,5 +55,6 @@ plt.title('Restored Image')
 
 plt.show()
 
+# Save the salt-and-peppered and restored images
 cv2.imwrite("images/salt_peppered_image.jpg", noisy_image)
 cv2.imwrite("images/restored_salt_pepper_image.jpg", restored_image)
